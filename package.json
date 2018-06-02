@@ -6,7 +6,7 @@
   "scripts": {
     "less": "./less.sh",
     "test": "echo './less.sh'",
-        "pngtosvg": "./js/pngtosvg.js"
+    "pngtosvg": "./js/pngtosvg.js"
   },
   "repository": {
     "type": "git",
@@ -30,6 +30,7 @@
   "dependencies": {
     "jquery": "^3.3.1",
     "less": "^3.0.4",
-    "png-to-svg": "^1.0.5"
+    "png-to-svg": "^1.0.5",
+    "reset-css": "^3.0.0"
   }
 }
