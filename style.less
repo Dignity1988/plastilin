@@ -16,26 +16,21 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i');
 
 /*flex mixins*/
-@mixin selected-radius{
--webkit-box-shadow: 0px 0px 8px 1px rgba(12,47,143,0.69);
--moz-box-shadow: 0px 0px 8px 1px rgba(12,47,143,0.69);
-box-shadow: 0px 0px 8px 1px rgba(12,47,143,0.69);
+.flex-direction(@direction){
+	 flex-direction: @direction;
+	-webkit-flex-direction: @direction;
+	-ms-flex-direction: @direction;
 }
-@mixin flex-direction($direction){
-	 flex-direction: $direction;
-	-webkit-flex-direction: $direction;
-	-ms-flex-direction: $direction;
+.border-radius(@border-radius){
+	border-radius: @border-radius;
+	-webkit-border-radius: @border-radius;
+	-ms-border-radius: @border-radius;
+	-o-border-radius:@border-radius;
 }
-@mixin border-radius($border-radius){
-	border-radius: $border-radius;
-	-webkit-border-radius: $border-radius;
-	-ms-border-radius: $border-radius;
-	-o-border-radius:$border-radius;
-}
-@mixin order($number){
--webkit-box-ordinal-group: $number;
--ms-flex-order: $number;
-order: $number;
+.order(@number){
+-webkit-box-ordinal-group: @number;
+-ms-flex-order: @number;
+order: @number;
 }
 /*end fonts*/
 
@@ -43,13 +38,13 @@ order: $number;
 /* 2. flex grid*/
 .flex{
   justify-content: space-between;
-@flex-direction(column);
+.flex-direction(column);
 display:flex;
 .row-full{
-align-self:1;@flex-direction(row);
+align-self:1;.flex-direction(row);
 }
-.flex-row{@flex-direction(row);margin-top:60px;border-bottom:1px dotted grey;justify-content:space-between;}
-.flex-column{align-self:stretch;@flex }
+.flex-row{.flex-direction(row);margin-top:60px;border-bottom:1px dotted grey;justify-content:space-between;}
+.flex-column{align-self:stretch;}
 .flex-column__centered{align-self: center;}
 }
 
@@ -58,18 +53,18 @@ align-self:1;@flex-direction(row);
 .hidden-lg{display:none;}
 /*ordering of the flex box should be chaged for orws and some rows are hidden also button should be visible on the large desktops*/
 @media screen and (max-width:768px){
-.top {display:inline-block;
+.top {display:inline-block;}
 
 
 /*different order for heading, slider row */
-.clider{@order:2}
+.slider{.order(2);}
 
-/*end changing order for rows*?
-
-
+/*end changing order for rows*/
 
 
-}
+
+
+
 .hid{display:none;}
 .mob{display:inline-block;}
 
