@@ -1,0 +1,35 @@
+{
+  "name": "plastilin",
+  "version": "1.0.0",
+  "description": "test",
+  "main": "./js/main.js",
+  "scripts": {
+    "less": "./less.sh",
+    "test": "echo './less.sh'",
+        "pngtosvg": "./js/pngtosvg.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dignity1988/plastilin.git"
+  },
+  "keywords": [
+    "responisive",
+    "slider",
+    "included",
+    "test",
+    "for",
+    "platilin",
+    "studio"
+  ],
+  "author": "Plastilin Studio",
+  "license": "GPL-2.0-only",
+  "bugs": {
+    "url": "https://github.com/Dignity1988/plastilin/issues"
+  },
+  "homepage": "https://github.com/Dignity1988/plastilin#readme",
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "less": "^3.0.4",
+    "png-to-svg": "^1.0.5"
+  }
+}
