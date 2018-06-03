@@ -1,5 +1,5 @@
 jQuery(document).ready(function(){
-  $(".slider-1").slick({
+  jQuery(".slider-1").slick({
 
   // normal options...
   infinite: true,
@@ -20,7 +20,7 @@ jQuery(document).ready(function(){
     }]  });
 
 
-$(".slider-2").slick({
+jQuery(".slider-2").slick({
 
 // normal options...
 infinite: true,
