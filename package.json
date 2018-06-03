@@ -3,11 +3,6 @@
   "version": "1.0.0",
   "description": "test",
   "main": "./js/main.js",
-  "scripts": {
-    "less": "./less.sh",
-    "test": "echo './less.sh'",
-    "pngtosvg": "./js/pngtosvg.js"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Dignity1988/plastilin.git"
@@ -28,9 +23,19 @@
   },
   "homepage": "https://github.com/Dignity1988/plastilin#readme",
   "dependencies": {
+    "imagemin": "^5.3.1",
     "jquery": "^3.3.1",
     "less": "^3.0.4",
-    "png-to-svg": "^1.0.5",
-    "reset-css": "^3.0.0"
+    "reset-css": "^3.0.0",
+    "slick-carousel": "^1.8.1",
+    "uglify-js": "^3.4.0"
+  },
+  "scripts": {
+    "less": "./less.sh",
+    "test": "echo './less.sh'",
+    "compress": "./js/compress.js"
+  },
+  "devDependencies": {
+    "compress-images": "^1.3.7"
   }
 }
