@@ -707,6 +707,9 @@ div.slick-slide > div.headings {
     border-width: 0 10px 10px 10px;
     border-color: transparent transparent #ffffffff transparent;
   }
+  .top-text {
+    margin-bottom: -120px;
+  }
   .headings {
     padding: 0px;
     display: flex;
